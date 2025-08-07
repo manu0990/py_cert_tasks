@@ -22,7 +22,7 @@ def scrape_bbc_headlines():
             unique_headlines = list(dict.fromkeys(headlines))[:10]
             
             # Save to file
-            filename = f"bbc_headlines_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+            filename = f"task_03/bbc_headlines_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
             with open(filename, 'w', encoding='utf-8') as f:
                 f.write("BBC News Headlines\n")
                 f.write("=" * 20 + "\n\n")
